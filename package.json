@@ -1,16 +1,28 @@
 {
-  "name": "test",
-  "version": "0.1.0",
+  "name": "advert",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "@lucky-canvas/vue": "^0.1.11",
+    "@nutui/nutui-bingo": "^1.0.7",
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.13",
+    "fingerprintjs2": "^2.1.4",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
+    "qs": "^6.11.1",
     "vue": "^2.6.14",
+    "vue-cookie": "^1.1.4",
+    "vue-cookies": "^1.8.3",
+    "vue-lazyload": "^3.0.0",
     "vue-router": "^3.5.1",
+    "vue-wechat-title": "^2.0.7",
     "vuex": "^3.6.2"
   },
   "devDependencies": {
@@ -29,6 +41,7 @@
     "eslint-plugin-vue": "^8.0.3",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
+    "postcss": "^8.4.23",
     "vue-template-compiler": "^2.6.14"
   }
 }

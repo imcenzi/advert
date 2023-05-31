@@ -8,15 +8,27 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
+    //component: () => import(/* webpackChunkName: "about" */ '../views/PrizeTray.vue'),
+    meta: {title:'幸运大转盘'}
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/nine',
+    name: '九宫格',
+    component: () => import(/* webpackChunkName: "about" */ '../views/RaffleNine.vue'),
+    meta: {title:'幸运大转盘'}
+  },
+  {
+    path: '/wheel',
+    name: '转盘',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PrizeTray.vue'),
+    meta: {title:'幸运大转盘'}
+  },
+  {
+    path: '/prizeList',
+    name: '我的奖品',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PrizeList.vue'),
+    meta: {title:'幸运大转盘'}
   }
 ]
 
@@ -26,4 +38,6 @@ const router = new VueRouter({
   routes
 })
 
+
 export default router
+
